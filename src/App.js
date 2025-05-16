@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ProductCard from './components/ProductCard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: '40px', display: 'flex', justifyContent: 'center' }}>
+      <ProductCard
+        image="https://via.placeholder.com/300x200"
+        title="Holiday Chocolate Box"
+        price="19.99"
+      />
     </div>
   );
 }
